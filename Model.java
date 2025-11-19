@@ -9,6 +9,11 @@ public class Model {
   public void register(View view) {
     this.views[view.id] = view;
   }
+  public void broadcast(Command c) {
+    for (int i = 0; i < views.length; i++) {
+      System.out.println("Sending " + c + " to " + views[i].id); 
+    } 
+  }
 }
 
 // ---( Model.java )---

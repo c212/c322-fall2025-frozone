@@ -11,6 +11,7 @@ public class Controller implements KeyListener {
   }
   public void keyPressed(KeyEvent e) {
     System.out.println("Controller for " + v.id + " " + e);
+    m.broadcast(new Command(v.id)); 
   }
   public void keyReleased(KeyEvent e) { }
   public void keyTyped(KeyEvent e) { }
