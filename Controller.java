@@ -7,11 +7,11 @@ public class Controller implements KeyListener {
   public Controller(Model m, View v) {
     this.m = m;
     this.v = v;
-    System.out.println("Controller for " + v.id + " created."); 
+    // System.out.println("Controller for " + v.id + " created."); 
   }
   public void keyPressed(KeyEvent e) {
     Command c = new Command(v.id);
-    System.out.println("Controller for " + v.id + " sending [" + c + "] ");
+    // System.out.println("Controller for " + v.id + " sending [" + c + "] ");
     m.broadcast(c); 
   }
   public void keyReleased(KeyEvent e) { }

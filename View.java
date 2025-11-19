@@ -8,13 +8,13 @@ public class View extends JPanel {
     this.m = m;
     this.id = id;
     m.register(this); 
-    System.out.println("View for player " + this.id + " created and registered with the model."); 
+    // System.out.println("View for player " + this.id + " created and registered with the model."); 
   }
   public void paintComponent(Graphics g) {
-    System.out.println("View " + this.id + " repainting..."); 
+    // System.out.println("View " + this.id + " repainting..."); 
   }
   public void updateView() {
-    System.out.println("View " + this.id + " being sent an update signal.");
+    // System.out.println("View " + this.id + " being sent an update signal.");
     repaint(); 
   }
 }
