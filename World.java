@@ -9,7 +9,7 @@ public class World extends View {
     int i = 0; 
     for (Point p : locations) {
       g.drawOval(p.x, p.y, 20, 20); 
-      g.drawString("" + i++, p.x + 5, p.y + 15); 
+      g.drawString("" + m.args[i++], p.x + 5, p.y + 15); 
     }
   }
 }
