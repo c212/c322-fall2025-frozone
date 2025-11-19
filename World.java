@@ -6,8 +6,11 @@ public class World extends View {
   }
   public void paintComponent(Graphics g) {
     Point[] locations = ((Players)m).locations;
-    for (Point p : locations) 
+    int i = 0; 
+    for (Point p : locations) {
       g.drawOval(p.x, p.y, 20, 20); 
+      g.drawString("" + i++, p.x + 5, p.y + 15); 
+    }
   }
 }
 
