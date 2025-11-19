@@ -2,7 +2,7 @@ import javax.swing.JFrame;
 
 public class Example {
   public static void main(String[] args) {
-    Model m = new Model(args);
+    Model m = new Players(args);
     for (int i = 0; i < args.length; i++) {
       System.out.println("Processing " + args[i]);
       View v = new View(m, i); 
