@@ -8,6 +8,13 @@ public class Players extends Model {
     }
   }
 
-}
+  public void broadcast(Command c) {
+    Move m = (Move) c; 
+    Point p = this.locations[c.id]; 
+    p.x += m.dx; 
+    p.y += m.dy; 
+    super.broadcast(c);
+  }
 
+}
 // ---( Players.java )---
