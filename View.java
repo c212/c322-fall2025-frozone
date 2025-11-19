@@ -6,7 +6,8 @@ public class View extends JPanel {
   public View(Model m, int id) {
     this.m = m;
     this.id = id;
-    System.out.println("View for player " + this.id + " created."); 
+    m.register(this); 
+    System.out.println("View for player " + this.id + " created and registered with the model."); 
   }
 }
 
