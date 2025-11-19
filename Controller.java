@@ -2,8 +2,8 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class Controller implements KeyListener {
-  private Model m;
-  private View v;
+  protected Model m;
+  protected View v;
   public Controller(Model m, View v) {
     this.m = m;
     this.v = v;
