@@ -5,7 +5,7 @@ public class Example {
     Model m = new Players(args);
     for (int i = 0; i < args.length; i++) {
       System.out.println("Processing " + args[i]);
-      View v = new View(m, i); 
+      View v = new World(m, i); 
       Controller c = new Controller(m, v);
       JFrame f = new JFrame("Player: " + args[i]); 
       f.setSize(400, 400); 
