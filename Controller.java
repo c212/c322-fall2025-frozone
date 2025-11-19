@@ -10,8 +10,9 @@ public class Controller implements KeyListener {
     System.out.println("Controller for " + v.id + " created."); 
   }
   public void keyPressed(KeyEvent e) {
-    System.out.println("Controller for " + v.id + " " + e);
-    m.broadcast(new Command(v.id)); 
+    Command c = new Command(v.id);
+    System.out.println("Controller for " + v.id + " sending [" + c + "] ");
+    m.broadcast(c); 
   }
   public void keyReleased(KeyEvent e) { }
   public void keyTyped(KeyEvent e) { }

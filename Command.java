@@ -7,3 +7,5 @@ public class Command {
     return "Command issued by view " + this.id; 
   }
 }
+
+// --( Command.java )--
