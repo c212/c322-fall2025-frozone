@@ -2,7 +2,7 @@ import javax.swing.JPanel;
 import java.awt.Graphics; 
 
 public class View extends JPanel {
-  private Model m;
+  protected Model m;
   int id;
   public View(Model m, int id) {
     this.m = m;
