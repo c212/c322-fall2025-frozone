@@ -14,6 +14,7 @@ public class View extends JPanel {
     System.out.println("View " + this.id + " repainting..."); 
   }
   public void updateView() {
+    System.out.println("View " + this.id + " being sent an update signal.");
     repaint(); 
   }
 }

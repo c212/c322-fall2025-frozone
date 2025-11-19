@@ -10,8 +10,10 @@ public class Model {
     this.views[view.id] = view;
   }
   public void broadcast(Command c) {
+    // depending on c modify the data structures
     for (int i = 0; i < views.length; i++) {
       System.out.println("Sending " + c + " to " + views[i].id); 
+      views[i].updateView();
     } 
   }
 }
